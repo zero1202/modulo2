@@ -1,0 +1,150 @@
+<div data-role="header">
+			<h1>Crea tu Presupuesto</h1>
+			<div class="navegacion"></div>	
+		</div>
+
+		<div role="main" class="ui-content">
+			<form>
+				<h3 class="ui-bar ui-bar-a">Personaliza los Parámetros</h3>
+				<div class="ui-body">
+					<label for="paginas">Páginas <small>Selecciona el número de páginas que realizarás</small></label>
+					    				<input type="range" name="paginas" id="paginas" min="1" max="50" value="1">
+
+					<label for="temas">Temas <small>Selecciona el número de temas que realizarás</small></label>
+					    				<input type="range" name="temas" id="temas" min="1" max="10" value="1">
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Complejidad <small id="complejidad-descripcion"></small></legend>
+
+						        <input type="radio" name="complejidad" id="c-personal" value="personal" checked="checked" data-descripcion="Descripcion 1">
+						        <label for="c-personal">Personal</label>
+
+						        <input type="radio" name="complejidad" id="c-standard" value="standard" data-descripcion="Descripcion 2">
+						        <label for="c-standard">Standard</label>
+
+						        <input type="radio" name="complejidad" id="c-avanzado" value="avanzado" data-descripcion="Descripcion 3">
+						        <label for="c-avanzado">Avanzado</label>
+
+						<input type="radio" name="complejidad" id="c-deluxe" value="deluxe" data-descripcion="Descripcion 4">
+						        <label for="c-deluxe">Deluxe</label>
+
+						<input type="radio" name="complejidad" id="c-profesional" value="profesional" data-descripcion="Descripcion 5">
+						        <label for="c-profesional">Profesional</label>
+
+						<input type="radio" name="complejidad" id="c-empresarial" value="empresarial" data-descripcion="Descripcion 6">
+						        <label for="c-empresarial">Empresarial</label>
+					    </fieldset>
+
+					<label for="emails">Emails <small>Selecciona la cantidad de emails a configurar</small></label>
+					<input type="range" name="emails" id="emails" data-highlight="true" min="0" max="100" value="50">
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Opciones <small>Selecciona lo que desees</small></legend>
+
+						        <input value="logo" type="checkbox" name="opciones" id="o-logo">
+						        <label for="o-logo">Logo</label>
+
+						       	<input value="feed" type="checkbox" name="opciones" id="o-feed">
+						        <label for="o-feed">Feed RSS</label>
+
+						<input value="resp" type="checkbox" name="opciones" id="o-resp">
+						        <label for="o-resp">Optimizado para Moviles</label>
+
+						<input value="busqueda" type="checkbox" name="opciones" id="o-busqueda">
+						        <label for="o-busqueda">Búsqueda</label>
+
+						<input value="archivos" type="checkbox" name="opciones" id="o-archivos">
+						        <label for="o-archivos">Carga de archivos</label> 				
+					    </fieldset>
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Social <small>Incrementa la interaccion de tus visitantes con contenido social dinamico</small></legend>
+
+						        <input value="Facebook" type="checkbox" name="social" id="o-facebook">
+						        <label for="o-facebook">Facebook</label>
+						<input value="Twitter" type="checkbox" name="social" id="o-twitter">
+						        <label for="o-twitter">Twitter</label>
+						<input value="Blog" type="checkbox" name="social" id="o-blog">
+						        <label for="o-blog">Blog</label>
+						<input value="Youtube" type="checkbox" name="social" id="o-youtube">
+						        <label for="o-youtube">Youtube</label>
+						<input value="Otro" type="checkbox" name="social" id="o-other">
+						        <label for="o-other">Otro</label>
+						       					
+					    </fieldset>
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Fotos <small>Muestra fotos e imagenes para proveer una experiencia vibrante</small></legend>
+						        <input value="Galeria" type="checkbox" name="fotos" id="o-galeria">
+						        <label for="o-galeria">Galeria</label>
+						<input value="Slider" type="checkbox" name="fotos" id="o-slider">
+						        <label for="o-slider">Slider</label>
+						<input value="Gestion de Imagenes" type="checkbox" name="fotos" id="o-imagenes">
+						        <label for="o-imagenes">Gestion de Imagenes</label>
+						<input value="Flickr" type="checkbox" name="fotos" id="o-flickr">
+						        <label for="o-flickr">Flickr</label>
+						<input value="Integracion" type="checkbox" name="fotos" id="o-integracion">
+						        <label for="o-integracion">Otra Integracion</label>				       					
+					    </fieldset>
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Modulos <small>Selecciona lo que desees</small></legend>
+
+						        <input value="logo" type="checkbox" name="opciones" id="o-login">
+						        <label for="o-login">Login</label>
+
+						       	<input value="feed" type="checkbox" name="opciones" id="o-perfil">
+						        <label for="o-perfil">Perfil de Usuario</label>
+
+						<input value="resp" type="checkbox" name="opciones" id="o-producto">
+						        <label for="o-producto">Productos</label>
+
+						<input value="busqueda" type="checkbox" name="opciones" id="o-cms">
+						        <label for="o-cms">Paginas Editables (CMS)</label>
+
+						<input value="archivos" type="checkbox" name="opciones" id="o-com">
+						        <label for="o-com">Comentarios</label> 				
+					    </fieldset>
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Monetizacion<small>Incrementa la interaccion de tus visitantes con contenido social dinamico</small></legend>
+
+						        <input value="Facebook" type="checkbox" name="social" id="o-donaciones">
+						        <label for="o-donaciones">Aceptar Donaciones</label>
+						<input value="Twitter" type="checkbox" name="social" id="o-basico">
+						        <label for="o-basico">eCommerce Basico</label>
+						<input value="Blog" type="checkbox" name="social" id="o-intermedio">
+						        <label for="o-intermedio">eCommerce Intermedio</label>
+						<input value="Youtube" type="checkbox" name="social" id="o-avanzado">
+						        <label for="o-avanzado">eCommerce Avanzado</label>
+						<input value="Otro" type="checkbox" name="social" id="o-descarga">
+						        <label for="o-descarga">Contenido Descargable</label>
+						       					
+					    </fieldset>
+
+					<fieldset data-mini="true" data-role="controlgroup" data-type="horizontal">
+						        <legend>Gestion de Servicios<small>Servicios recurrentes a ser gestiondados mensualmente</small></legend>
+						        <input value="Galeria" type="checkbox" name="fotos" id="o-hosting">
+						        <label for="o-hosting">Hosting</label>
+						<input value="Slider" type="checkbox" name="fotos" id="o-dominio">
+						        <label for="o-dominio">Dominio</label>
+						<input value="Gestion de Imagenes" type="checkbox" name="fotos" id="o-email">
+						        <label for="o-email">Email</label>
+						<input value="Flickr" type="checkbox" name="fotos" id="o-publicidad">
+						        <label for="o-publicidad">Publicidad</label>
+						<input value="Integracion" type="checkbox" name="fotos" id="o-lista">
+						        <label for="o-lista">Lista de Correos</label>				       					
+					    </fieldset>
+					<div style="margin-top: 2em">
+						<label for="total">Total Bs.</label>	
+						<input class="text-total" type="text" name="total" id="total" disabled="disabled" value="1500.00">
+					</div>
+				</div>
+				<input type="email" data-clear-btn="true" name="envio" id="envio" value="" placeholder="nombre@dominio.com">
+				<a href="#" class="ui-btn ui-btn-inline ui-icon-mail ui-btn-icon-left">Enviar</a>
+				<input type="email" data-clear-btn="true" name="guardar" id="guardar" value="" placeholder="Nombre y apellido" required="required">
+				<a href="#" class="ui-btn ui-btn-inline ui-icon-check ui-btn-icon-left">Guardar</a>
+			</form>
+		</form>
+
+	</div>
